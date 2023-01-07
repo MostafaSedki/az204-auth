@@ -36,7 +36,8 @@ namespace az204_auth
             // DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
             // GraphServiceClient graphClient = new GraphServiceClient(authProvider);
             Console.WriteLine($"Token:\t{result.ExpiresOn}");
-            Console.WriteLine($"User:\t{user.UserPrincipalName}");
+            Console.WriteLine($"Display Name:\t{user.DisplayName}");
+            Console.WriteLine($"UserPrincipalName:\t{user.UserPrincipalName}");
         }
     }
 }
